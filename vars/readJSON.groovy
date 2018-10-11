@@ -2,7 +2,7 @@
 
 def call(){
   def buildValues = readFile 'test.json'   
-  echo """${buildValues.name} 
+  echo """${buildValues.attachments[0].name} 
   ${buildValues.age} 
   ${buildValues.car}"""
 }
