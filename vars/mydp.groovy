@@ -1,4 +1,4 @@
-def call(String branch, String scmurl, String email, String serverport, String developmentServer, String stagingServer, String productionServer) {
+def call() {
     	
      pipeline {
         agent any
