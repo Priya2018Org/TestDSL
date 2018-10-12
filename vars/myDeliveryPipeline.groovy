@@ -1,5 +1,3 @@
-#!/usr/bin/env groovy
-
 def call(def branch, def scmurl, def email, def serverport, def developmentServer, def stagingServer, def productionServer) {
     	
      pipeline {
