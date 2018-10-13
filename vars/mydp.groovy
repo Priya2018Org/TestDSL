@@ -28,6 +28,9 @@ def call(String branch, String scmUrl, String email, String serverPort, String d
             stage('build') {
                 steps {
                     echo "build"
+			def msbuildpath = ""tool name: 'MSBuild14', type: 'hudson.plugins.msbuild.MsBuildInstallation'""
+			echo ${msbuildpath}
+			bat ""${msbuildpath}\\msbuild.exe 'C:\Jenkins\workspace\FirstJenkinsBuild\Webapp1\webapp1.exe'""
                 }
             }
 
