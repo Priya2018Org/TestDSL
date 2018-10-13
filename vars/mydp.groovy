@@ -30,7 +30,7 @@ def call(String branch, String scmUrl, String email, String serverPort, String d
                 steps {
                     echo "build"
 	            echo "${msbuildpath}"
-		//	"'${msbuildpath}'\\msbuild.exe 'C:\\Jenkins\\workspace\\FirstJenkinsBuild\\Webapp1\\webapp1.exe'"
+		     bat "'${msbuildpath}'\\msbuild.exe 'C:\\Jenkins\\workspace\\FirstJenkinsBuild\\Webapp1\\webapp1.exe'"
 		}
             }
 
