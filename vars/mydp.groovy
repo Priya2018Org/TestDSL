@@ -2,7 +2,7 @@
 
 
 def call(String branch, String scmUrl, String email, String serverPort, String developmentServer, String stagingServer, String productionServer) {
-  def msbuildpath = "tool name: MSBuild14, type: hudson.plugins.msbuild.MsBuildInstallation"
+  def msbuildpath = "tool name: 'MSBuild14', type: 'hudson.plugins.msbuild.MsBuildInstallation'"
     pipeline {
         agent any
         stages {
