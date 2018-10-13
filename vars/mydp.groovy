@@ -8,7 +8,7 @@ def call(String branch, String scmUrl, String email, String serverPort, String d
             stage('checkout git') {
                 steps {
                     echo "checkout git"
-		    hello ''Priya'
+		    hello 'Priya'
                 }
             }
 
