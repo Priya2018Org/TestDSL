@@ -30,7 +30,7 @@ def call(String branch, String scmUrl, String email, String serverPort, String d
                     echo "build"
 			def msbuildpath = "tool name: MSBuild14, type: hudson.plugins.msbuild.MsBuildInstallation"
 			echo ${msbuildpath}
-			"'${msbuildpath}'\\msbuild.exe 'C:\\Jenkins\\workspace\\FirstJenkinsBuild\\Webapp1\\webapp1.exe'"
+		//	"'${msbuildpath}'\\msbuild.exe 'C:\\Jenkins\\workspace\\FirstJenkinsBuild\\Webapp1\\webapp1.exe'"
                
             }
 
