@@ -1,7 +1,8 @@
 #!/usr/bin/env groovy
 
+
 def call(String branch, String scmUrl, String email, String serverPort, String developmentServer, String stagingServer, String productionServer) {
-  
+  def msbuildpath = "tool name: MSBuild14, type: hudson.plugins.msbuild.MsBuildInstallation"
     pipeline {
         agent any
         stages {
@@ -28,8 +29,7 @@ def call(String branch, String scmUrl, String email, String serverPort, String d
             stage('build') {
                 steps {
                     echo "build"
-			def msbuildpath = "tool name: MSBuild14, type: hudson.plugins.msbuild.MsBuildInstallation"
-			echo "${msbuildpath}"
+	            echo "${msbuildpath}"
 		//	"'${msbuildpath}'\\msbuild.exe 'C:\\Jenkins\\workspace\\FirstJenkinsBuild\\Webapp1\\webapp1.exe'"
 		}
             }
