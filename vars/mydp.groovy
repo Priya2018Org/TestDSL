@@ -55,11 +55,6 @@ def call(String branch, String scmUrl, String email, String serverPort, String d
             }
         }//stages
     }//pipelnine
-
-    post {
-    failure {
-        echo "Faliure"
-    }
 }//post
 
 }
